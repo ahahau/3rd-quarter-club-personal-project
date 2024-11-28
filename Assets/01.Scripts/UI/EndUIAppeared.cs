@@ -2,7 +2,7 @@ using System.Collections;
 using DG.Tweening;
 using UnityEngine;
 
-public class UIAppeared : MonoBehaviour
+public class EndUIAppeared : MonoBehaviour
 {
     public RectTransform uiElement; 
     private float duration = 1f;

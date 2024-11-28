@@ -262,7 +262,7 @@ Transform:
   m_GameObject: {fileID: 231949428}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5386128, y: -4.0365677, z: 4133.246}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -375,6 +375,37 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: 1b60c608f83ead94b95a740e9e9778eb, type: 2}
+--- !u!1 &648881173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 648881174}
+  m_Layer: 0
+  m_Name: Stage1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &648881174
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648881173}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 830.3495, y: 800.34204, z: 7.83724}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &909414950
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,7 +600,7 @@ GameObject:
   - component: {fileID: 1855220607}
   - component: {fileID: 1855220606}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: Stage1Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -786,9 +817,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1111044817489971989, guid: 5fa9ff1c7fdff714a99f8a015c3c2a46, type: 3}
+      propertyPath: stageName
+      value: stage1
+      objectReference: {fileID: 0}
     - target: {fileID: 2937786406182695184, guid: 5fa9ff1c7fdff714a99f8a015c3c2a46, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7662701965460669332, guid: 5fa9ff1c7fdff714a99f8a015c3c2a46, type: 3}
+      propertyPath: m_fontSize
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 7662701965460669332, guid: 5fa9ff1c7fdff714a99f8a015c3c2a46, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8080704562353785609, guid: 5fa9ff1c7fdff714a99f8a015c3c2a46, type: 3}
       propertyPath: m_IsActive
@@ -2408,3 +2451,4 @@ SceneRoots:
   - {fileID: 231949430}
   - {fileID: 1855220609}
   - {fileID: 4498118971613468948}
+  - {fileID: 648881174}
