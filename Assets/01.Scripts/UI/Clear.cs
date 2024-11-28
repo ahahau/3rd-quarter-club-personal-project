@@ -20,7 +20,7 @@ public class Clear : MonoBehaviour
     }
     IEnumerator Wait()
     {
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.15f);
         clearUi.SetActive(true);
     }
 }

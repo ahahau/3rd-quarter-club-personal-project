@@ -672,7 +672,29 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ledge Climb Animation 64x64_0: -2228913286320136190
+      Ledge Climb Animation 64x64_1: 4961433269864363369
+      Ledge Climb Animation 64x64_10: 6687935965426453974
+      Ledge Climb Animation 64x64_11: -4907665049835064246
+      Ledge Climb Animation 64x64_12: 4057380496965332440
+      Ledge Climb Animation 64x64_13: 5834985611757109635
+      Ledge Climb Animation 64x64_14: -5140842272212904816
+      Ledge Climb Animation 64x64_15: 3922264164684326039
+      Ledge Climb Animation 64x64_16: 5768245812650266683
+      Ledge Climb Animation 64x64_17: -5418146570052285532
+      Ledge Climb Animation 64x64_18: -8191548098322110905
+      Ledge Climb Animation 64x64_19: -7181990743051318662
+      Ledge Climb Animation 64x64_2: -2600561131083166145
+      Ledge Climb Animation 64x64_20: -1224576373522153158
+      Ledge Climb Animation 64x64_21: 8617552149513880028
+      Ledge Climb Animation 64x64_3: 2815309431793322590
+      Ledge Climb Animation 64x64_4: -4900017469626579264
+      Ledge Climb Animation 64x64_5: -618599626971918398
+      Ledge Climb Animation 64x64_6: -8368537378166227411
+      Ledge Climb Animation 64x64_7: -2387821596068996915
+      Ledge Climb Animation 64x64_8: -4350149734441078367
+      Ledge Climb Animation 64x64_9: 5441742977474050450
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

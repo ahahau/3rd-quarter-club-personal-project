@@ -472,7 +472,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Run Animation 48x48_0: -9074540910749184221
+      Run Animation 48x48_1: 6700716135859360649
+      Run Animation 48x48_10: 57609328732577893
+      Run Animation 48x48_11: 7032162004734444029
+      Run Animation 48x48_12: -1417723626773123801
+      Run Animation 48x48_13: -5755713579917923983
+      Run Animation 48x48_2: 7466588973943782280
+      Run Animation 48x48_3: -4156494327902433985
+      Run Animation 48x48_4: -1673611317665983558
+      Run Animation 48x48_5: -9163266914759468633
+      Run Animation 48x48_6: 3685605424134257320
+      Run Animation 48x48_7: -1739021469961148092
+      Run Animation 48x48_8: -1820193449815903006
+      Run Animation 48x48_9: 2480013045072892025
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

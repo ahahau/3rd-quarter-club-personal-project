@@ -4,7 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
 
-public class FirPlayerMove : MonoBehaviour
+public class FirPlayerMove : PlayerState
 {
     private float _moveDelay = 0.25f; 
     private bool _isMove;

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 
-public class SecPlayerMove : MonoBehaviour
+public class SecPlayerMove : PlayerState
 {
     private float _moveDelay = 0.25f; 
     private bool _isMove;
