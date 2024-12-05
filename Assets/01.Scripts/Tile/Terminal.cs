@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class TerminalCollision : MonoBehaviour
+public class Terminal : MonoBehaviour
 {
     private void OnTriggerStay2D(Collider2D collision)
     {

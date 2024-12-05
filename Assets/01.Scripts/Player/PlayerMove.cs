@@ -1,15 +1,18 @@
+using System;
 using System.Collections.Generic;
-using DG.Tweening;
 using UnityEngine;
+using DG.Tweening;
+using NUnit.Framework;
+using UnityEngine.UI;
 
-public class SecPlayerMove : PlayerState
+public class PlayerMove : PlayerState
 {
     private float _moveDelay = 0.25f; 
     private bool _isMove;
-    [SerializeField] private List<Transform> tile = new List<Transform>();
-    [SerializeField]private int _curPos = 12;
+    [SerializeField] public List<Transform> tile = new List<Transform>();
+    [SerializeField]public int _curPos = 12;
     private Vector3 _startPos;
-
+    [SerializeField]public List<int> playerType = new List<int>();
     private void Start()
     {
         _startPos = transform.position;
@@ -17,21 +20,21 @@ public class SecPlayerMove : PlayerState
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.W)) VNextPos(playerType[0]); 
+        if (Input.GetKeyDown(KeyCode.S)) VNextPos(playerType[1]); 
+        if (Input.GetKeyDown(KeyCode.A)) HNextPos(playerType[0]); 
+        if (Input.GetKeyDown(KeyCode.D)) HNextPos(playerType[1]); 
         if (GameManager.Instance.firArrive && GameManager.Instance.secArrive)
         {
             this.enabled = false;
         }
-        if (Input.GetKeyDown(KeyCode.W)) VNextPos(1); 
-        if (Input.GetKeyDown(KeyCode.S)) VNextPos(-1); 
-        if (Input.GetKeyDown(KeyCode.A)) HNextPos(1); 
-        if (Input.GetKeyDown(KeyCode.D)) HNextPos(-1); 
     }
 
     private void HNextPos(int nextDir)
     {
         if ((_curPos % 5 == 0 && nextDir < 0) || ((_curPos + 1) % 5 == 0 && nextDir > 0))
             return;
-        
+
         int newPos = _curPos + nextDir;
 
         if (newPos >= 0 && newPos < tile.Count)
@@ -53,7 +56,7 @@ public class SecPlayerMove : PlayerState
         }
     }
 
-    private void Move(int curPos)
+    public void Move(int curPos)
     {
         if (_isMove) return; 
         _isMove = true;
@@ -61,7 +64,6 @@ public class SecPlayerMove : PlayerState
         Vector3 targetPosition = new Vector3(tile[curPos].position.x, tile[curPos].position.y, transform.position.z);
         transform.DOMove(targetPosition, _moveDelay)
             .SetEase(Ease.OutCubic);
-        _isMove = false;
-        GameManager.Instance.moveCnt++;
+        _isMove = false; 
     }
 }

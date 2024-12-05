@@ -609,6 +609,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5797875402584856527}
+  - component: {fileID: 546631171227756314}
   - component: {fileID: 8668321331311737537}
   - component: {fileID: 1645658108014417326}
   - component: {fileID: 6771972675786903260}
@@ -636,6 +637,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4787776543635642235}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &546631171227756314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478445743726534890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5685b928b370a547800a61c7a7e82b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &8668321331311737537
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -729,6 +742,7 @@ MonoBehaviour:
   - {fileID: 6355680740776136225}
   - {fileID: 5938560089828113303}
   - {fileID: 10716077161523182}
+  playerType: 01000000ffffffff
 --- !u!50 &6771972675786903260
 Rigidbody2D:
   serializedVersion: 5
@@ -2197,8 +2211,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2679297585439854112}
+  - component: {fileID: 4175815556930409743}
   - component: {fileID: 6533059445629780917}
-  - component: {fileID: 1300533167227204905}
+  - component: {fileID: 5668720200532605775}
   - component: {fileID: 3266539180420455626}
   - component: {fileID: 1102057969078610682}
   - component: {fileID: 205804568509428703}
@@ -2224,6 +2239,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7946234174005094424}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4175815556930409743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4699511612061301114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5685b928b370a547800a61c7a7e82b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &6533059445629780917
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2279,7 +2306,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1300533167227204905
+--- !u!114 &5668720200532605775
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2288,7 +2315,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4699511612061301114}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 857edd7ebe737434aa0262c12cafed3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 2a44a00469b0e824f87cbc441a05d3b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   tile:
@@ -2317,7 +2344,7 @@ MonoBehaviour:
   - {fileID: 3988922477992674990}
   - {fileID: 564588100793535490}
   - {fileID: 1839825108687257707}
-  _curPos: 12
+  playerType: ffffffff01000000
 --- !u!50 &3266539180420455626
 Rigidbody2D:
   serializedVersion: 5
